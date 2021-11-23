@@ -1,0 +1,11 @@
+<div>
+  <label
+    >Número de placa padrão antigo
+    <input [ngModel]="placaAntiga" (ngModelChange)="placaAntiga = $event" />
+  </label>
+
+  <label
+    >Resultado
+    <input [ngModel]="placaAntiga | placaAutomovelAntiga" />
+  </label>
+</div>

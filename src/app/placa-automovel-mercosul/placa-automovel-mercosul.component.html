@@ -1,0 +1,11 @@
+<div>
+  <label
+    >Número de placa mercosul
+    <input [ngModel]="placaMercosul" (ngModelChange)="placaMercosul = $event" />
+  </label>
+
+  <label
+    >Resultado
+    <input [ngModel]="placaMercosul | placaAutomovelMercosul" />
+  </label>
+</div>

@@ -1,0 +1,11 @@
+<div>
+  <label
+    >Número de Telefone BR
+    <input [ngModel]="telefone" (ngModelChange)="telefone = $event" />
+  </label>
+
+  <label
+    >Resultado
+    <input [ngModel]="telefone | telefoneBR" />
+  </label>
+</div>
